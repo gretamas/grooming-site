@@ -1,4 +1,4 @@
-#Pet Grooming Site
+£Pet Grooming Site
 
 **Pet grooming site created with HTML**
 
