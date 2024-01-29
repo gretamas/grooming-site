@@ -1,4 +1,4 @@
-£Pet Grooming Site
+#Pet Grooming Site
 
 **Pet grooming site created with HTML**
 
@@ -6,8 +6,4 @@
 
 {Link} (https://dog-grooming-ba41d.web.app)
 
-˜˜˜javascript
 
-console.log("Best Site Ever")
-
-˜˜˜
