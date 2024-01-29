@@ -5,3 +5,9 @@
 *This is created to practice git*
 
 {Link} (https://dog-grooming-ba41d.web.app)
+
+˜˜˜javascript
+
+console.log("Best Site Ever")
+
+˜˜˜
