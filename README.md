@@ -4,7 +4,7 @@
 
 _This is created to practice git_
 
-{Link} (https://dog-grooming-2.web.app)
+{Link} (https://gretamas.github.io/grooming-site/)
 
 This is a description of pet grooming site
 
