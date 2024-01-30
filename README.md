@@ -4,8 +4,10 @@
 
 _This is created to practice git_
 
-{Link} (https://dog-grooming-ba41d.web.app)
+{Link} ()
 
 This is a description of pet grooming site
 
 It has Info, News, Price list and Contacts
+
+Photos are added to the site
