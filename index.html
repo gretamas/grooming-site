@@ -8,91 +8,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet grooming</title>
     <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <h1 id="firstHeader">Pet Grooming site</h1>
+      <hr />
+      <nav>
+        <ul id="navigation">
+          <li>
+            <a href=""><i>About us</i></a>
+          </li>
+          <li>
+            <a href=""><i>News</i></a>
+          </li>
+          <li>
+            <a href=""><i>Price List</i></a>
+          </li>
+          <li>
+            <a href=""><i>Photos</i></a>
+          </li>
+          <li>
+            <a href=""><i>Contacts</i></a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <picture>
-      <img
-        src="images/beautiful-pet-portrait-dog_23-2149218454.jpg.avif"
-        alt="dog image"
-        style="width: auto"
-      />
-    </picture>
-    <section>
-      <form>
-        <fieldset id="fieldset">
-          <legend id="registrationHeader">Choose time for your appointment</legend>
-          <br />
-          <br />
-          <label for="fname"> First name:</label>
-          <input type="text" id="fname" name="fname" />
-          <br />
-          <br />
-          <label for="lname"> Last name:</label>
-          <input type="text" id="lname" name="lname" />
-          <br />
-          <br />
-          <label for="Email"> Email:</label>
-          <input type="email" id="email" name="email" />
-          <br />
-          <br />
-          <label for="service">Choose a service:</label>
-          <select name="service" id="service">
-            <optgroup label="grooming service">
-              <option value="Basic Service">Basic Service</option>
-              <option value="Special Bath">Specia Bath</option>
-              <option value="Premium Bath">Premium Bath</option>
-            </optgroup>
-          </select>
-          <br />
-          <br />
-          <input
-            type="datetime-local"
-            id="meeting-time"
-            name="meeting-time"
-            value="2018-06-12T19:30"
-            min="2024-02-01T00:00"
-            max="2025-02-01T00:00"
-          />
-          <br />
-          <br />
-          <input type="submit" value="Submit" />
-        </fieldset>
-      </form>
-    </section>
-    <nav>
-      <ul id="navigation">
-        <li>
-          <a href=""><i>About us</i></a>
-        </li>
-        <li>
-          <a href=""><i>News</i></a>
-        </li>
-        <li>
-          <a href=""><i>Price List</i></a>
-        </li>
-        <li>
-          <a href=""><i>Photos</i></a>
-        </li>
-        <li>
-          <a href=""><i>Contacts</i></a>
-        </li>
-      </ul>
-    </nav>
     <main>
       <section>
-        <h2>About Us</h2>
+        <div>
+          <video id="video" autoplay muted loop src="images/video.mov"></video>
+        </div>
+        <div>
+          <form id="form">
+            <fieldset>
+              <legend>Choose time for your appointment</legend>
+              <br />
+              <br />
+              <label class="formLabel" for="fname"> First name:</label>
+              <input type="text" id="fname" name="fname" />
+              <br />
+              <br />
+              <label class="formLabel" for="lname"> Last name:</label>
+              <input type="text" id="lname" name="lname" />
+              <br />
+              <br />
+              <label class="formLabel" for="Email"> Email:</label>
+              <input type="email" id="email" name="email" />
+              <br />
+              <br />
+              <label class="formLabel" for="service">Choose a service:</label>
+              <select name="service" id="service">
+                <optgroup label="grooming service">
+                  <option value="Basic Service">Basic Service</option>
+                  <option value="Special Bath">Specia Bath</option>
+                  <option value="Premium Bath">Premium Bath</option>
+                </optgroup>
+              </select>
+              <br />
+              <br />
+              <input
+                type="datetime-local"
+                id="meeting-time"
+                name="meeting-time"
+                value="2018-06-12T19:30"
+                min="2024-02-01T00:00"
+                max="2025-02-01T00:00"
+              />
+              <br />
+              <br />
+              <input id="formButton" type="submit" value="Submit" />
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <section id="aboutUsSection">
+        <h2 class="headers">About Us</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
           deleniti quos ipsa iusto voluptatem at obcaecati vitae dolores
           laborum? Rem perferendis quidem porro quam alias, excepturi id.
-          Voluptates, assumenda officia?
+          Voluptates, assumenda officia? Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quaerat deleniti quos ipsa iusto voluptatem at
+          obcaecati vitae dolores laborum? Rem perferendis quidem porro quam
+          alias, excepturi id. Voluptates, assumenda officia?Lorem ipsum dolor
+          sit amet, consectetur adipisicing elit. Quaerat deleniti quos ipsa
+          iusto voluptatem at obcaecati vitae dolores laborum? Rem perferendis
+          quidem porro quam alias, excepturi id. Voluptates, assumenda officia?
         </p>
       </section>
-      <section>
-        <h2>New Location Opening</h2>
+      <section id="locationSection">
+        <h2 class="headers">New Location Opening</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod
           commodi non inventore fugit laborum sed, nobis nesciunt itaque quas
@@ -101,60 +107,70 @@
         Soon!
       </section>
       <section>
-        <h2>Price list</h2>
-        <table>
+        <h2 class="headers">Price list</h2>
+        <table id="priceTable">
           <tr>
-            <th>Service</th>
-            <th>Toy</th>
-            <th>Small</th>
-            <th>Medium</th>
-            <th>Large</th>
+            <th class="serviceName">Service</th>
+            <th class="serviceName">Toy</th>
+            <th class="serviceName">Small</th>
+            <th class="serviceName">Medium</th>
+            <th class="serviceName">Large</th>
           </tr>
           <tr>
-            <td>Basic Service</td>
-            <td>€7<sup>99</sup></td>
-            <td>€9<sup>99</sup></td>
-            <td>€11<sup>99</sup></td>
-            <td>€13<sup>99</sup></td>
+            <td class="serviceName">Basic Service</td>
+            <td class="price">€7<sup>99</sup></td>
+            <td class="price">€9<sup>99</sup></td>
+            <td class="price">€11<sup>99</sup></td>
+            <td class="price">€13<sup>99</sup></td>
           </tr>
           <tr>
-            <td>Special Bath</td>
-            <td>€9<sup>99</sup></td>
-            <td>€11<sup>99</sup></td>
-            <td>€13<sup>99</sup></td>
-            <td>€15<sup>99</sup></td>
+            <td class="serviceName">Special Bath</td>
+            <td class="price">€9<sup>99</sup></td>
+            <td class="price">€11<sup>99</sup></td>
+            <td class="price">€13<sup>99</sup></td>
+            <td class="price">€15<sup>99</sup></td>
           </tr>
           <tr>
-            <td>Premium Spa</td>
-            <td>€11<sup>99</sup></td>
-            <td>€13<sup>99</sup></td>
-            <td>€15<sup>99</sup></td>
-            <td>€17<sup>99</sup></td>
+            <td class="serviceName">Premium Spa</td>
+            <td class="price">€11<sup>99</sup></td>
+            <td class="price">€13<sup>99</sup></td>
+            <td class="price">€15<sup>99</sup></td>
+            <td class="price">€17<sup>99</sup></td>
           </tr>
         </table>
       </section>
       <section>
-        <h2>Photos</h2>
-        <img
-          src="images/istockphoto-1298295737-612x612.jpg"
-          alt="dog image"
-          height="200"
-        />
-        <img src="images/grooming2.jpg" alt="dog image" height="200" />
+        <h2 class="headers">Photos</h2>
+        <div class="gallery">
+          <img
+            src="images/istockphoto-1298295737-612x612.jpg"
+            alt="dog image"
+          />
+          <div class="desc">This is photo 1</div>
+        </div>
+        <div class="gallery">
+          <img src="images/grooming2.jpg" alt="dog image" />
+          <div class="desc">This is photo 2</div>
+        </div>
       </section>
       <section>
-        <h2>Contacts</h2>
-        <address>
-          <ul id="contactDetails">
-            <li><b>Address:</b> Ateities g. 91, 06325 Vilnius</li>
-            <li><b>Phone Number:</b> +37067269110</li>
-            <li>
-              <b>Email:</b>
-              <a href="mailto:info@grooming.com">info@grooming.com</a>
-            </li>
-          </ul>
-          <br />
+        <hr />
+        <h2 class="headers">Contacts</h2>
+        <div>
+          <address class="contacts">
+            <ul>
+              <li><b>Address:</b> Ateities g. 91, 06325 Vilnius</li>
+              <li><b>Phone Number:</b> +37067269110</li>
+              <li>
+                <b>Email:</b>
+                <a href="mailto:info@grooming.com">info@grooming.com</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
           <iframe
+            class="contacts"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.7576894741!2d25.245986499999997!3d54.7314769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd9112ce8f5e65%3A0xcc138b947472253b!2sMandarinas!5e0!3m2!1sen!2slt!4v1706891579933!5m2!1sen!2slt"
             width="450"
             height="200"
@@ -163,7 +179,7 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-        </address>
+        </div>
       </section>
     </main>
     <footer>
