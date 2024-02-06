@@ -1,102 +1,152 @@
-#firstHeader{
-    -webkit-text-stroke: 1px darkgray;
-    color: #513e78;
-    text-align: center;
+body {
+  background-color: rgb(240, 216, 220);
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: rgb(240, 216, 220)
-    
+h1 {
+  -webkit-text-stroke: 1px darkgray;
+  color: #513e78;
 }
 
-#form{
-    background: linear-gradient(#e0f2f1, #e4bcc1);
-    width: 300px;
+.h2-header {
+  color: #513e78;
+  -webkit-text-stroke: 0.8px darkgray;
 }
 
-#video{
- margin-left: 320px;
- margin-top: 50px;
- margin-bottom: 50px;
- border: solid black 1px;
-
+.header-line {
+  display: inline-block;
 }
 
-#fieldset legend{
-    color: black;
-    -webkit-text-stroke: 0.5px darkgray;
+#logo {
+  height: 34px;
+  margin-left: 40%;
 }
 
-.formLabel{
-    color: black;
-    -webkit-text-stroke: 0.5px darkgray;
-    height: 390px;
-    padding: 0.5px;
+.main-nav {
+  background-color: #513e78;
+  text-align: center;
+  height: 45px;
 }
 
-.headers{
-   color: #513e78; 
-   -webkit-text-stroke: 0.8px darkgray;
+.main-nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 5px 15px;
+  border-right: black 1px solid;
+  border-left: black 1px solid;
+  padding: 7px;
+}
+
+.main-nav a {
+  color: #e4bcc1;
+  -webkit-text-stroke: 0.5px darkgray;
+  text-decoration: none;
+  text-size-adjust: 40px;
+}
+
+#video {
+  border: solid black 1px;
+  margin-left: 25%;
+}
+
+#about-us {
+  background-color: #d0e0e5;
+  border: #513e78 1px dotted;
+  margin: 25px;
+  padding: 20px;
+}
+
+#location-section {
+  background-color: #c8c0d9;
+  border-radius: 15%;
+  padding: 30px;
+  margin: 25px;
+  width: 400px;
+  height: 200px;
+  border: #d0e0e5 2px dotted;
 }
 
 
-#locationSection{
-    background-color: #c8c0d9;
-    border-radius: 25%;
-    padding: 30px;
-    margin: 45px;
-    width: 300px;
+table {
+  background-color: #d0e0e5;
+  height: 270px;
+  width: 400px;
+  margin: 25px;
 }
 
-table{
-background-color: #d0e0e5;
-height: 270px;
-width: 400px;
+th,
+td:first-child {
+  background-color: #c8c0d9;
+  text-align: center;
+  color: black;
+  -webkit-text-stroke: 0.5px darkgray;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
 }
 
-.serviceName{
-    background-color: #c8c0d9;
-    text-align: center;
-    color: black;
-    -webkit-text-stroke: 0.5px darkgray;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top:  1px solid black;  
+td:nth-child(2n),
+td:nth-child(3n),
+td:nth-child(4n),
+td:nth-child(5n) {
+  text-align: center;
+  color: black;
+  -webkit-text-stroke: 0.5px darkgray;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
 }
 
-.price{
-    text-align: center;
-    color: black;
-    -webkit-text-stroke: 0.5px darkgray;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top:  1px solid black;
+#form {
+  background: linear-gradient(#e0f2f1, #e4bcc1);
+  width: 300px;
 }
 
-.gallery{
-    margin: 5px;
+#fieldset legend {
+  color: black;
+  -webkit-text-stroke: 0.5px darkgray;
+}
+
+.form-label {
+  color: black;
+  -webkit-text-stroke: 0.5px darkgray;
+  height: 390px;
+  padding: 0.5px;
+}
+
+input{
+  display: block;
+  margin: 10px;
+}
+
+.gallery {
+  margin: 25px;
   border: 1px solid #ccc;
   width: 180px;
   display: inline-block;
 }
 
-.gallery img{
-    width: 100%;
-    height: auto;  
+.gallery img {
+  width: 100%;
+  height: auto;
 }
 
 .gallery:hover {
-    border: 1px solid #777;
+  border: 1px solid #777;
 }
 
-div.desc{
-    padding: 15px;
-    text-align: center; 
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
 
-
-
-
-
+.contacts {
+  margin: 25px;
+}
