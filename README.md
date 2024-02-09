@@ -1,13 +1,11 @@
 #Pet Grooming Site
 
-**Pet grooming site created with HTML**
+**Pet grooming site created with HTML and CSS**
 
 _This is created to practice git_
 
 {Link} (https://gretamas.github.io/grooming-site/)
 
-This is a description of pet grooming site
+Site has Info, News, Price list, Contacts, Video and Images
 
-It has Info, News, Price list and Contacts
-
-Photos are added to the site
+Navigation bar has been added
