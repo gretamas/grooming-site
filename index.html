@@ -8,10 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet grooming</title>
     <link rel="icon" href="./images/icon.png" />
-    <link type="text/css" rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/reset.css" type="text/css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/5a481d3278.js"
       crossorigin="anonymous"
@@ -21,41 +23,39 @@
     <header>
       <section class="nav-container">
         <nav class="main-nav">
-          <div>
-            <ul>
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#about-us">About us</a>
-              </li>
-              <li>
-                <a href="">Price List</a>
-              </li>
-              <li>
-                <a href="">Gallery</a>
-              </li>
-              <li>
-                <a href="">Contacts</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-          </div>
+          <ul>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#about-us">About us</a>
+            </li>
+            <li>
+              <a href="./price.html">Price List</a>
+            </li>
+            <li>
+              <a href="">Gallery</a>
+            </li>
+            <li>
+              <a href="">Contacts</a>
+            </li>
+            <div>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </ul>
         </nav>
       </section>
       <div>
         <video id="video" autoplay muted loop>
-          <source src="./videos/videodog.mp4" type="video/mp4" />
+          <source src="./videos/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div class="overlay">
           <i class="fa-solid fa-paw"></i>
           <h1 id="main-header">Pet Grooming</h1>
           <p>A loving and professional dog care</p>
-          <button class="book-button" type="submit">Book now</button>
+          <button class="primary-button" type="submit">Book now</button>
         </div>
         <div class="overlay2">
           <form id="form">
@@ -94,15 +94,15 @@
                 min="2024-02-01T00:00"
                 max="2025-02-01T00:00"
               />
-              <input id="form-button" type="submit" value="Submit" />
+              <button class="secondary-button" type="submit">Book now</button>
             </fieldset>
           </form>
         </div>
       </div>
     </header>
     <main>
+      <h2 class="section-heading">Our services</h2>
       <section id="services">
-        <h2 class="section-heading">Our services</h2>
         <div class="cards">
           <img src="./images/fullGrooming.webp" alt="grooming" />
           <div class="container">
@@ -131,14 +131,13 @@
             <p>Service Subtitle</p>
           </div>
         </div>
-        <button class="book-button" type="submit">Book now</button>
       </section>
+      <h2 class="section-heading">About Us</h2>
       <section id="about-us">
-        <h2 class="section-heading">About Us</h2>
-        <div>
+        <div class="about-us-item">
           <img src="./images/aboutUs.webp" alt="girl photo with a dog" />
         </div>
-        <div>
+        <div class="about-us-item">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod
             commodi non inventore fugit laborum sed, nobis nesciunt itaque quas
@@ -151,89 +150,67 @@
             alias ad voluptates tempora nisi iure animi amet exercitationem ex.
           </p>
         </div>
-        <div>
-          <img src="./images/dog.webp" alt="girl photo with a dog" />
-        </div>
       </section>
       <section>
-        <h2 class="section-heading">Price list</h2>
-        <table id="price-table">
-          <tr>
-            <th>Service</th>
-            <th>Toy</th>
-            <th>Small</th>
-            <th>Medium</th>
-            <th>Large</th>
-          </tr>
-          <tr>
-            <td>Basic Service</td>
-            <td>€7<sup>99</sup></td>
-            <td>€9<sup>99</sup></td>
-            <td>€11<sup>99</sup></td>
-            <td>€13<sup>99</sup></td>
-          </tr>
-          <tr>
-            <td>Special Bath</td>
-            <td>€9<sup>99</sup></td>
-            <td>€11<sup>99</sup></td>
-            <td>€13<sup>99</sup></td>
-            <td>€15<sup>99</sup></td>
-          </tr>
-          <tr>
-            <td>Premium Spa</td>
-            <td>€11<sup>99</sup></td>
-            <td>€13<sup>99</sup></td>
-            <td>€15<sup>99</sup></td>
-            <td>€17<sup>99</sup></td>
-          </tr>
-        </table>
-      </section>
-
-      <section>
-        <h2 class="section-heading">Gallery</h2>
-        <div class="gallery">
-          <img
-            src="images/istockphoto-1298295737-612x612.jpg"
-            alt="dog image"
-          />
-          <div class="desc">This is photo 1</div>
-        </div>
-        <div class="gallery">
-          <img src="images/grooming2.jpg" alt="dog image" />
-          <div class="desc">This is photo 2</div>
+        <h2 class="section-heading">Our happy clients</h2>
+        <div class="centered-container">
+          <div class="scrollable-images">
+            <img src="./images/reviews2.jpeg" alt="dog image" />
+            <img src="./images/reviews3.jpeg" alt="dog image" />
+            <img src="./images/reviews4.jpeg" alt="dog image" />
+            <img src="./images/reviews6.jpeg" alt="dog image" />
+            <img src="./images/reviews7.jpeg" alt="dog image" />
+            <img src="./images/reviews9.jpeg" alt="dog image" />
+            <img src="./images/reviews10.jpeg" alt="dog image" />
+            <img src="./images/reviews11.jpeg" alt="dog image" />
+            <img src="./images/reviews12.jpeg" alt="dog image" />
+            <img src="./images/reviews13.jpeg" alt="dog image" />
+          </div>
         </div>
       </section>
-      <section>
-        <hr />
+      <section class="contacts">
         <h2 class="section-heading">Contacts</h2>
-        <div>
-          <address class="contacts">
-            <ul>
-              <li><b>Address:</b> Ateities g. 91, 06325 Vilnius</li>
-              <li><b>Phone Number:</b> +37067269110</li>
-              <li>
-                <b>Email:</b>
-                <a href="mailto:info@grooming.com">info@grooming.com</a>
-              </li>
-            </ul>
-          </address>
+        <div class="contacts-container">
+          <ul>
+            <li class="contacts-box">
+              <i class="fa-solid fa-location-dot"></i>
+              <h5>Address:</h5>
+              <p>Ateities g. 91, 06325 Vilnius</p>
+            </li>
+            <li class="contacts-box">
+              <i class="fa-solid fa-door-open"></i>
+              <h5>Open hours:</h5>
+              <p>I-VI: 9:00AM-6:00PM</p>
+            </li>
+            <li class="contacts-box">
+              <i class="fa-solid fa-phone"></i>
+              <h5>Phone Number:</h5>
+              <p>+37067269110</p>
+            </li>
+            <li class="contacts-box">
+              <i class="fa-solid fa-envelope"></i>
+              <h5>Email:</h5>
+              <p><a href="mailto:info@grooming.com">info@grooming.com</a></p>
+            </li>
+          </ul>
         </div>
-        <div>
-          <iframe
-            class="contacts"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.7576894741!2d25.245986499999997!3d54.7314769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd9112ce8f5e65%3A0xcc138b947472253b!2sMandarinas!5e0!3m2!1sen!2slt!4v1706891579933!5m2!1sen!2slt"
-            width="450"
-            height="200"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.7576894741!2d25.245986499999997!3d54.7314769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd9112ce8f5e65%3A0xcc138b947472253b!2sMandarinas!5e0!3m2!1sen!2slt!4v1706891579933!5m2!1sen!2slt"
+          width="450"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
-    <footer>
-      <span>All rights reserved</span>
+    <footer class="footer">
+      <div class="footer-media">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p>All right reserved</p>
     </footer>
   </body>
 </html>
