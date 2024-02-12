@@ -8,64 +8,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet grooming</title>
     <link rel="icon" href="./images/icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link type="text/css" rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/5a481d3278.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header id="page-header">
-      <div class="nav-container">
-      <nav class="main-nav">
-        <ul>
-          <li>
-            <a href="">About us</a>
-          </li>
-          <li>
-            <a href="">News</a>
-          </li>
-          <li>
-            <a href="">Price List</a>
-          </li>
-          <li>
-            <a href="">Gallery</a>
-          </li>
-          <li>
-            <a href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-      <img id="logo" class="header-line" src="./images/icon.png" alt="logo">
-      <h1 class="header-line" id="h1-header">Pet Grooming site</h1>
+    <header>
+      <section class="nav-container">
+        <nav class="main-nav">
+          <div>
+            <ul>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#about-us">About us</a>
+              </li>
+              <li>
+                <a href="">Price List</a>
+              </li>
+              <li>
+                <a href="">Gallery</a>
+              </li>
+              <li>
+                <a href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </nav>
+      </section>
+      <div>
+        <video id="video" autoplay muted loop>
+          <source src="./videos/videodog.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+          <i class="fa-solid fa-paw"></i>
+          <h1 id="main-header">Pet Grooming</h1>
+          <p>A loving and professional dog care</p>
+          <button class="book-button" type="submit">Book now</button>
+        </div>
+        <div class="overlay2">
+          <form id="form">
+            <fieldset>
+              <legend>Choose time for your appointment</legend>
+              <label for="fname"> First name:</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="First Name"
+              />
+              <label for="lname"> Last name:</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+              />
+              <label for="Email"> Email:</label>
+              <input type="email" id="email" name="email" placeholder="Email" />
+              <label for="service">Choose a service:</label>
+              <select name="service" id="service">
+                <optgroup label="grooming service">
+                  <option value="text">Full Grooming</option>
+                  <option value="text">Wash &amp Blow Dry</option>
+                  <option value="text">Self Serve Dog Wash</option>
+                  <option value="text">Nail Clipping</option>
+                </optgroup>
+              </select>
+              <input
+                type="datetime-local"
+                id="meeting-time"
+                name="meeting-time"
+                value="2018-06-12T19:30"
+                min="2024-02-01T00:00"
+                max="2025-02-01T00:00"
+              />
+              <input id="form-button" type="submit" value="Submit" />
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </header>
     <main>
-      <section>
-          <video id="video" autoplay muted loop src="images/video.mov"></video>
+      <section id="services">
+        <h2 class="section-heading">Our services</h2>
+        <div class="cards">
+          <img src="./images/fullGrooming.webp" alt="grooming" />
+          <div class="container">
+            <h4>Full Grooming</h4>
+            <p>Service Subtitle</p>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="./images/washBlowDry.webp" alt="dog wash" />
+          <div class="container">
+            <h4>Wash &amp Blow Dry</h4>
+            <p>Service Subtitle</p>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="./images/SelfServe.webp" alt="grooming" />
+          <div class="container">
+            <h4>Self Serve Dog Wash</h4>
+            <p>Service Subtitle</p>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="./images/NailClipping.webp" alt="dog wash" />
+          <div class="container">
+            <h4>Nail Clipping</h4>
+            <p>Service Subtitle</p>
+          </div>
+        </div>
+        <button class="book-button" type="submit">Book now</button>
+      </section>
       <section id="about-us">
-        <h2 class="h2-header">About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-          deleniti quos ipsa iusto voluptatem at obcaecati vitae dolores
-          laborum? Rem perferendis quidem porro quam alias, excepturi id.
-          Voluptates, assumenda officia? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Quaerat deleniti quos ipsa iusto voluptatem at
-          obcaecati vitae dolores laborum? Rem perferendis quidem porro quam
-          alias, excepturi id. Voluptates, assumenda officia?Lorem ipsum dolor
-          sit amet, consectetur adipisicing elit. Quaerat deleniti quos ipsa
-          iusto voluptatem at obcaecati vitae dolores laborum? Rem perferendis
-          quidem porro quam alias, excepturi id. Voluptates, assumenda officia?
-        </p>
-      </section>
-      </section>
-      <section id="location-section">
-        <h2 class="h2-header">New Location Opening!!!</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod
-          commodi non inventore fugit laborum sed, nobis nesciunt itaque quas
-          alias ad voluptates tempora nisi iure animi amet exercitationem ex.
-        </p>
-        Soon!
+        <h2 class="section-heading">About Us</h2>
+        <div>
+          <img src="./images/aboutUs.webp" alt="girl photo with a dog" />
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod
+            commodi non inventore fugit laborum sed, nobis nesciunt itaque quas
+            alias ad voluptates tempora nisi iure animi amet exercitationem ex.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod
+            commodi non inventore fugit laborum sed, nobis nesciunt itaque quas
+            alias ad voluptates tempora nisi iure animi amet exercitationem ex.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod
+            commodi non inventore fugit laborum sed, nobis nesciunt itaque quas
+            alias ad voluptates tempora nisi iure animi amet exercitationem ex.
+          </p>
+        </div>
+        <div>
+          <img src="./images/dog.webp" alt="girl photo with a dog" />
+        </div>
       </section>
       <section>
-        <h2 class="h2-header">Price list</h2>
+        <h2 class="section-heading">Price list</h2>
         <table id="price-table">
           <tr>
             <th>Service</th>
@@ -97,40 +188,9 @@
           </tr>
         </table>
       </section>
+
       <section>
-        <div>
-          <form id="form">
-            <fieldset>
-              <legend>Choose time for your appointment</legend>
-              <label class="form-label" for="fname"> First name:</label>
-              <input type="text" id="fname" name="fname" />
-              <label class="form-label" for="lname"> Last name:</label>
-              <input type="text" id="lname" name="lname" />
-              <label class="form-label" for="Email"> Email:</label>
-              <input type="email" id="email" name="email" />
-              <label class="form-label" for="service">Choose a service:</label>
-              <select name="service" id="service">
-                <optgroup label="grooming service">
-                  <option value="Basic Service">Basic Service</option>
-                  <option value="Special Bath">Specia Bath</option>
-                  <option value="Premium Bath">Premium Bath</option>
-                </optgroup>
-              </select>
-              <input
-                type="datetime-local"
-                id="meeting-time"
-                name="meeting-time"
-                value="2018-06-12T19:30"
-                min="2024-02-01T00:00"
-                max="2025-02-01T00:00"
-              />
-              <input id="form-button" type="submit" value="Submit" />
-            </fieldset>
-          </form>
-        </div>
-      </section>
-      <section>
-        <h2 class="h2-header">Gallery</h2>
+        <h2 class="section-heading">Gallery</h2>
         <div class="gallery">
           <img
             src="images/istockphoto-1298295737-612x612.jpg"
@@ -145,7 +205,7 @@
       </section>
       <section>
         <hr />
-        <h2 class="h2-header">Contacts</h2>
+        <h2 class="section-heading">Contacts</h2>
         <div>
           <address class="contacts">
             <ul>
