@@ -1,5 +1,101 @@
-body{
-    background-color: rgb(186, 184, 190);
-    margin: 0;
-    padding: 0;
+.image-services img {
+  width: 1437px;
+  height: 400px;
+  margin-top: 48px;
+  background: transparent;
+}
+
+.image-services h1 {
+  font-size: 50px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: white;
+}
+
+.image-services {
+  position: relative;
+  text-align: center;
+}
+
+.breeds-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.breeds-buttons button {
+  width: 200px;
+  border: none;
+  background-color: rgb(186, 184, 190);
+  font-family: "myFirstFont";
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.breeds-buttons button:hover {
+  transform: scale(1.08);
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.pricing-image {
+  height: 95px;
+  width: 95px;
+  border-radius: 50px;
+}
+
+.pricint-text h2 {
+  width: 350px;
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 15px;
+}
+
+.pricint-text p {
+  width: 250px;
+  font-size: 15px;
+  line-height: 35px;
+}
+
+.pricing-numbers {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 15px;
+  gap: 10px;
+  line-height: 30px;
+}
+
+.pricing-button {
+  padding-top: 25px;
+}
+
+.pricing-button button {
+  padding: 12px;
+  width: 120px;
+  font-size: 20px;
+  font-family: "myFirstFont";
+  font-weight: 700;
+  color: #4a484b;
+}
+
+.pricing-button button:hover {
+  transform: scale(1.08);
+}
+
+hr {
+  width: 1000px;
 }
