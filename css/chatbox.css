@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url(../fonts/Raleway-VariableFont_wght.ttf);
+  font-style: normal;
+  font-size: 400;
+}
+
+body {
+  background-color: rgb(186, 184, 190);
+  margin: 0;
+  padding: 0;
+  font-family: "myFirstFont";
+  position: relative;
+}
+
+.chatbox {
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: [first] 30px [line2] 70px [line3] 40px [line4] 90px[line5] 70px[line6] 50px [line7] 50px [line8] 50px [line9] 1fr;
+  grid-template-rows: 3;
+}
+
+.nav-button{
+  height: 25px;
+  width: 25px;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
