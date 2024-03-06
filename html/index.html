@@ -1,6 +1,5 @@
-
- <!DOCTYPE html>
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Greta Masliukova" />
@@ -8,7 +7,12 @@
     <meta name="keywords" content="grooming, pets, website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet grooming</title>
-    <link rel="icon" href="../images/icon.svg" />
+    <link rel="icon" href="/images/icon.svg?v=M44lzPylqQ" />
+    <link
+      rel="mask-icon"
+      href="{{ base_path }}/images/icon.svg?v=M44lzPylqQ"
+      color="#000000"
+    />
     <link rel="stylesheet" href="../css/reset.css" type="text/css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <script
@@ -18,6 +22,20 @@
   </head>
   <body>
     <header>
+      <section class="discount">
+      <div class="discount-line">
+        <div class="discount-line__first-half">
+          <img src="../images/icon.svg" alt="icon" />
+          <p>20% OFF your first visit</p>
+          <img src="../images/icon.svg" alt="icon" /> 
+        </div>
+        <div class="discount-line__second-half">
+          <img src="../images/icon.svg" alt="icon" />
+          <p>20% OFF your first visit</p>
+          <img src="../images/icon.svg" alt="icon" />
+          </div>
+        </div>
+    </section>
       <section class="nav-container">
         <nav class="main-nav">
           <ul>
@@ -155,10 +173,12 @@
             </g>
           </svg>
           <h1 id="main-header">Pet Grooming</h1>
-          <p>A loving and professional dog care</p>
-          <a href="../priceS.html"
-            ><button class="primary-button" type="submit">Book now</button></a
-          >
+          <h2>A loving and professional dog care</h2>
+          <a href="../html/priceS.html" class="header-btn">
+            <i class="fa-solid fa-arrow-right header-btn--first-arrow"></i>
+            <p class="header-btn__p">Book now</p>
+            <i class="fa-solid fa-arrow-right header-btn--second-arrow"></i>
+          </a>
         </div>
         <div class="overlay2">
           <form id="form">
@@ -205,55 +225,71 @@
     </header>
     <main>
       <section class="chatbox">
-        <a href=""><img src="../images/message.svg" alt="chatbox" /></a>
+        <a href="../html/chat.html"
+          ><img src="../images/message.svg" alt="chatbox"
+        /></a>
       </section>
       <h2 class="section-heading">Our services</h2>
       <section id="services">
-        <div class="cards" id="deal-container">
-          <img src="../images/fullGrooming.webp" alt="grooming" />
-          <div class="ribbon"><span>Best Deal!</span></div>
-          <div class="container">
-            <h4>Full Grooming</h4>
-            <p>Service Subtitle</p>
+        <div class="container" id="deal-container">
+          <div class="card">
+            <div class="front">
+              <div class="ribbon"><span>Best Deal!</span></div>
+              <img src="../images/fullGrooming.webp" alt="grooming" />
+            </div>
+            <div class="back">
+              <h4>Full Grooming</h4>
+              <p>Service Subtitle</p>
+            </div>
           </div>
         </div>
-        <div class="cards">
-          <img src="../images/washBlowDry.webp" alt="dog wash" />
-          <div class="container">
-            <h4>Wash &amp Blow Dry</h4>
-            <p>Service Subtitle</p>
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <img src="../images/washBlowDry.webp" alt="grooming" />
+            </div>
+            <div class="back">
+              <h4>Wash &amp Blow Dry</h4>
+              <p>Service Subtitle</p>
+            </div>
           </div>
         </div>
-        <div class="cards">
-          <img src="../images/SelfServe.webp" alt="grooming" />
-          <div class="container">
-            <h4>Self Serve Dog Wash</h4>
-            <p>Service Subtitle</p>
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <img src="../images/SelfServe.webp" alt="grooming" />
+            </div>
+            <div class="back">
+              <h4>Self Serve Dog Wash</h4>
+              <p>Service Subtitle</p>
+            </div>
           </div>
         </div>
-        <div class="cards">
-          <img src="../images/NailClipping.webp" alt="dog wash" />
-          <div class="container">
-            <h4>Nail Clipping</h4>
-            <p>Service Subtitle</p>
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <img src="../images/NailClipping.webp" alt="dog wash" />
+            </div>
+            <div class="back">
+              <h4>Nail Clipping</h4>
+              <p>Service Subtitle</p>
+            </div>
           </div>
         </div>
       </section>
       <h2 class="section-heading">About Us</h2>
-      <section id="about-us">
-        <div class="about-us-item">
+      <section class="about-us">
+        <div class="about-us__img">
           <img src="../images/aboutUs.webp" alt="girl photo with a dog" />
         </div>
-        <div class="about-us-item">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod
-            commodi non inventore fugit laborum sed, nobis nesciunt itaque quas
-            alias ad voluptates tempora nisi iure animi amet exercitationem ex.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod
-            commodi non inventore fugit laborum sed, nobis nesciunt itaque quas
-            alias ad voluptates tempora nisi iure animi amet exercitationem ex.
-          </p>
-        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod
+          commodi non inventore fugit laborum sed, nobis nesciunt itaque quas
+          alias ad voluptates tempora nisi iure animi amet exercitationem ex.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod
+          commodi non inventore fugit laborum sed, nobis nesciunt itaque quas
+          alias ad voluptates tempora nisi iure animi amet exercitationem ex.
+        </p>
       </section>
       <section>
         <h2 class="section-heading">Our happy clients</h2>

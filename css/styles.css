@@ -16,21 +16,22 @@ main {
   position: relative;
 }
 
-.chatbox img{
+/* Chatbox icon*/
+
+.chatbox img {
   position: fixed;
   left: 1320px;
   height: 90px;
   width: auto;
   border-radius: 50px;
   background-color: none;
-  
+  z-index: 3;
 }
 
-.chatbox img:hover{
+.chatbox img:hover {
   transform: scale(1.5);
   transition-duration: 500ms;
   box-shadow: 0px 25px 25px 0 rgba(252, 250, 250, 0.2);
-  
 }
 
 #main-header {
@@ -54,6 +55,74 @@ main {
   margin-bottom: 50px;
 }
 
+/* Promotion line
+
+/* 
+.discount {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+*/
+
+.discount-line {
+  background: #212121;
+  overflow: hidden;
+  height: 65px;
+  position: relative;
+}
+
+.discount-line div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 65px;
+  transform: translate(100%, 0);
+}
+
+.discount-line p {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #e4bcc1;
+}
+
+.discount-line img {
+  height: 60px;
+}
+
+.discount-line__first-half,
+.discount-line__second-half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: discount infinite linear forwards;
+}
+
+.discount-line__second-half {
+  animation: discount 10000ms infinite linear forwards;
+}
+
+@keyframes discount {
+  0% {
+    transform: translate(100%, 0);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
 /* Main navigation line*/
 
 .main-nav {
@@ -61,10 +130,10 @@ main {
   background-color: #4a484b;
   border-bottom: #c8c0d9 0.8px solid;
   position: fixed;
-  top: 0;
+  top: 60;
   left: 0;
   width: 100vw;
-  z-index: 3;
+  z-index: 999;
 }
 
 .main-nav ul {
@@ -109,18 +178,13 @@ a:active {
   -webkit-text-stroke: 0.1px palevioletred;
 }
 
-/* video container + p + book button + form */
+/* video container + p + form */
 
 #video {
   width: 1437px;
   height: 600px;
   object-fit: cover;
   z-index: 0;
-}
-
-i {
-  /* paw icon + facebook + instagram from navigation bar */
-  color: #e0f2f1;
 }
 
 path,
@@ -134,12 +198,12 @@ circle {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 60px 5px;
+  margin: 80px 5px;
   display: block;
   padding: 45px;
 }
 
-.overlay p {
+.overlay h2 {
   font-size: 30px;
   color: #4a484b;
   text-shadow: 1px 1px black;
@@ -147,12 +211,128 @@ circle {
   letter-spacing: 0.5px;
 }
 
-.primary-button {
-  border-radius: 8px;
-  color: #d0e0e5;
-  border-color: #d0e0e5;
-  padding: 10px;
-  background-color: #4a484b;
+/* Animation book button*/
+
+.header-btn {
+  background-color: #e4bcc1;
+  color: #323636;
+  border-radius: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  overflow: hidden;
+}
+
+.header-btn p {
+  letter-spacing: 2px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.header-btn--first-arrow {
+  transform: translate(-15px);
+}
+
+@keyframes arrow1 {
+  from {
+    transform: translate(-15px);
+  }
+  to {
+    transform: translate(25px);
+  }
+}
+
+.header-btn:hover .header-btn--first-arrow {
+  animation-name: arrow1;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  color: #323636;
+}
+
+@keyframes bookNow {
+  from {
+    transform: translate(-1px);
+  }
+  to {
+    transform: translate(30px);
+  }
+}
+
+.header-btn:hover .header-btn__p {
+  animation-name: bookNow;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  color: #323636;
+}
+
+@keyframes arrow2 {
+  from {
+    transform: translate(-1px);
+  }
+  to {
+    transform: translate(70px);
+  }
+}
+
+.header-btn:hover .header-btn--second-arrow {
+  animation-name: arrow2;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  color: #323636;
+}
+
+@keyframes arrow11 {
+  from {
+    transform: translate(25px);
+  }
+  to {
+    transform: translate(-15px);
+  }
+}
+
+.header-btn--first-arrow {
+  animation-name: arrow11;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+  animation-delay: 200ms;
+}
+
+@keyframes bookNow1 {
+  from {
+    transform: translate(30px);
+  }
+  to {
+    transform: translate(-1px);
+  }
+}
+
+.header-btn__p {
+  animation-name: bookNow1;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+  animation-delay: 200ms;
+}
+
+@keyframes arrow22 {
+  from {
+    transform: translate(70px);
+  }
+  to {
+    transform: translate(-1px);
+  }
+}
+
+.header-btn--second-arrow {
+  animation-name: arrow22;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+  margin-left: 5px;
+  animation-delay: 200ms;
 }
 
 .overlay2 {
@@ -171,7 +351,7 @@ circle {
   width: 300px;
   height: 515px;
   padding: 20px;
-  margin-top: 45px;
+  margin-top: 109px;
   border-top: 1px dashed pink;
 }
 
@@ -204,21 +384,17 @@ input:focus {
   background-color: rgb(250, 212, 218);
 }
 
+.secondary-button {
+  background-color: rgb(93, 117, 119);
+  border-radius: 8px;
+  color: #d0e0e5;
+  background-color: #323636;
+  border-color: #d0e0e5;
+  padding: 10px;
+  margin-left: 20px;
+}
+
 /* Services section (cards) */
-
-.cards img {
-  height: 200px;
-  width: 300px;
-  border-radius: 16px;
-}
-
-.cards {
-  width: 300px;
-  background-color: #e4bcc1;
-  border-radius: 16px;
-  margin: 30px;
-  padding-bottom: 25px;
-}
 
 .container h4::first-letter {
   color: black;
@@ -237,17 +413,44 @@ input:focus {
   padding-top: 8px;
 }
 
-.container {
-  padding: 10px 50px;
+.container:hover .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+  height: 270px;
+  width: 350px;
 }
 
-.cards:hover {
-  box-shadow: 0px 25px 25px 0 rgba(252, 250, 250, 0.2);
-  transform: scale(1.05);
+.card {
+  height: 270px;
+  width: 350px;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
 }
 
-.card button {
+.front img {
+  height: 270px;
+  width: 350px;
+  border-radius: 16px;
+}
+
+.front,
+.back {
+  height: 270px;
+  width: 350px;
+  border-radius: 16px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
   background-color: #e4bcc1;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
 #services {
@@ -257,23 +460,6 @@ input:focus {
   flex-flow: row wrap;
   justify-content: space-around;
   object-fit: cover;
-}
-
-.secondary-button {
-  background-color: rgb(93, 117, 119);
-  border-radius: 8px;
-  color: #d0e0e5;
-  background-color: #323636;
-  border-color: #d0e0e5;
-  padding: 10px;
-  margin-left: 20px;
-}
-
-#services button {
-  display: block;
-  margin-left: 620px;
-  margin-bottom: 25px;
-  margin-top: 40px;
 }
 
 .ribbon {
@@ -296,25 +482,35 @@ input:focus {
   overflow: hidden;
 }
 
-#services h2 {
-  border: 1px dashed pink;
-}
-
 /* About Us section */
 
-#about-us h2 {
+.about-us h2 {
   color: black;
   font-weight: 700;
   text-shadow: 1px 1px white;
 }
 
-#about-us img {
+.about-us__img img {
   height: 550px;
   margin-left: 270px;
   margin-right: -120px;
+  z-index: 0;
 }
 
-#about-us p {
+.about-us__img {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about-us p {
   color: #e4bcc1;
   font-size: 20px;
   height: 350px;
@@ -328,12 +524,10 @@ input:focus {
   margin: 60px;
 }
 
-#about-us {
+.about-us {
   display: flex;
   flex-direction: row;
 }
-
-/* Price list section*/
 
 /* Gallery section */
 

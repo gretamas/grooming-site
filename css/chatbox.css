@@ -19,12 +19,13 @@ body {
   position: absolute;
   display: grid;
   grid-template-columns: [first] 30px [line2] 70px [line3] 40px [line4] 90px[line5] 70px[line6] 50px [line7] 50px [line8] 50px [line9] 1fr;
-  grid-template-rows: 3;
+  grid-template-rows: [first] 30px [row2] 70px [row3] 40px;
 }
 
 .nav-button{
   height: 25px;
   width: 25px;
-  grid-column-start: 3;
-  grid-column-end: 3;
+  grid-row-start: ;
+  grid-column-start: row3;
+  grid-column-end: row3;
 }
